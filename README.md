@@ -4,6 +4,10 @@ Um player de música desenvolvido em **Java + JavaFX**, com uma interface simple
 
 O projeto permite carregar arquivos MP3, criar uma playlist e controlar a reprodução das músicas.
 
+## Demostração
+
+![Demostração](image.png)
+
 ## Sobre o projeto
 
 O MP3 Player possui uma interface limpa com:
@@ -14,7 +18,7 @@ O MP3 Player possui uma interface limpa com:
 - Controle de volume
 - Loop de música
 - Remover músicas da playlist
-- Reprodução automática da primeira música adicionada
+- Reprodução automática da primeira música
 
 ## Tecnologias utilizadas
 
@@ -36,29 +40,41 @@ O MP3 Player possui uma interface limpa com:
 - Barra de progresso
 - Exibição do tempo atual e duração da música
 
----
-
 ## Como executar
 
-### Tenha instalado:
+### Tenha instalado
 
 - Java JDK 17+
 - Maven
 
-### Entre na pasta:
+1. Clone esse repositorio:
+
 ```bash
-cd mp3Player
+git clone https://github.com/estudos-ryan/MP3Player.git
 ```
 
-### Execute:
+1. Execute no terminal:
+
 ```bash
 mvn javafx:run
 ```
 
-##  Melhorias futuras
+## Estrutura do Arquivos
+
+- **`Main.java`**
+  - *Ponto de entrada:* Responsável apenas por instanciar e inicializar a aplicação.
+
+- **`App.java`**
+  - *Interface Gráfica:* Contém os componentes visuais e a interação com o usuário.
+
+- **`MusicPlayer.java`**
+  - *Lógica de Áudio:* Gerencia os controles de áudio (tocar, pausar, parar e nível de volume).
+
+- **`Playlist.java`**
+  - *Gerenciador de Mídias:* Cuida do gerenciamento, ordenação e navegação da lista de músicas.
+
+## Melhorias futuras
 
 - Modo aleatório
-- Salvar playlist automaticamente
 - Mostrar capa do álbum
 - Suporte a mais formatos de áudio
-- Melhor organização do código em classes
